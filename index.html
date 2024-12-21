@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Adeoluwa Olasehinde</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e0f7fa;
+            background-image: 'paper-fibers.png';
+        }
+
+        header {
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2a9d8f;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #e76f51;
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about, .experience, .skills, .projects, .contact {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2a9d8f;
+            border-bottom: 3px solid #e76f51;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li, .projects ul li {
+            margin: 10px 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #e76f51;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #264653;
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+
+        .background-section {
+            position: relative;
+            overflow: hidden;
+            padding: 40px 20px;
+        }
+
+        .background-section img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+
+        .interactive-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .interactive-image:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-icons a {
+            text-decoration: none;
+            color: #2a9d8f;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #e76f51;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
+
+            section {
+                margin: 10px;
+            }
+
+            .contact-icons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Adeoluwa Olasehinde</h1>
+        <p>Environmental Scientist | AI & Data Science Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <div class="background-section">
+            <img src="https://source.unsplash.com/1600x900/?environment,nature" alt="Environmental Background">
+            <h2>About Me</h2>
+            <p>
+                With a strong academic foundation in Environmental Science and Health, I aim to merge my expertise with AI and Data Science to tackle global environmental challenges. My work has spanned EHS (Environmental Health and Safety), workplace hazard mitigation, and data analytics to drive impactful decisions.
+            </p>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <p><span class="highlight">Environmental Health and Safety Specialist</span> - Eriez Manufacturing</p>
+        <ul>
+            <li>Reduced environmental hazards by 60% through risk/exposure assessments.</li>
+            <li>Enhanced workplace safety with a 35% reduction in energy control incidents.</li>
+            <li>Utilized Enablon's risk assessment module to prioritize critical risks.</li>
+        </ul>
+
+        <p><span class="highlight">Graduate Research Assistant</span> - Gannon University</p>
+        <ul>
+            <li>Developed a chemical labeling system to improve lab safety.</li>
+            <li>Created a database management system for student academic insights.</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><span class="highlight">Technical Expertise:</span> SQL, Tableau, Power BI, R</li>
+            <li><span class="highlight">Safety Management:</span> OSHA guidelines, Risk Assessment, Incident Investigation</li>
+            <li><span class="highlight">Key Techniques:</span> Root Cause Analysis, 5S Methodology, Fault Tree Analysis</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><span class="highlight">Dashboard for Safety Insights:</span> Created using Tableau to visualize safety data.</li>
+            <li><span class="highlight">Evacuation Map Redesign:</span> Improved workplace safety at Eriez Manufacturing.</li>
+            <li><span class="highlight">AI for Environmental Analysis:</span> Exploring ML models for environmental impact predictions.</li>
+        </ul>
+        <img src="https://source.unsplash.com/600x400/?data,environment" alt="Project Image" class="interactive-image">
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aaolasehinde@outlook.com">aaolasehinde@outlook.com</a></p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/adeoluwa-olasehinde" target="_blank">linkedin.com/in/adeoluwa-olasehinde</a></p>
+        <p>Phone: 412-424-1159</p>
+        <div class="contact-icons">
+            <a href="mailto:aaolasehinde@outlook.com"><i class="fas fa-envelope"></i></a>
+            <a href="http://www.linkedin.com/in/adeoluwa-olasehinde" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+14124241159"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adeoluwa Olasehinde. Built for showcasing expertise in Environmental Science and Data Science.</p>
+    </footer>
+</body>
+</html>
